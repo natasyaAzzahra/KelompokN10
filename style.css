@@ -1,0 +1,499 @@
+/* css reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* clear fix */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+.cf {
+    *zoom: 1;
+}
+
+/* css project start */
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    background-color: white;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+header {
+    background-color: white;
+    padding: 10px 50px;
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    border-bottom: 1px solid black;
+    z-index: 10;
+}
+
+header h1 {
+    display: inline;
+}
+
+header a {
+    font-size: 25px;
+    font-weight: bold;
+    color: #243763;
+    text-decoration: none;
+}
+
+nav {
+    float: right;
+}
+
+nav .menu-icon {
+    display: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+
+
+}
+
+.button-orange {
+    background-color: #FF6E31;
+    border-radius: 5px;
+    padding: 7px;
+    margin-top: 20px;
+    color: #eaeaea;
+    display: inline-block;
+}
+
+.button-orange:hover {
+    background-color: #243763;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-top: 20px;
+    color: #eaeaea;
+    display: inline-block;
+}
+
+.button-navy {
+    background-color: #243763;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-top: 20px;
+    color: #eaeaea;
+    display: inline-block;
+}
+
+.button-navy:hover {
+    background-color: #FF6E31;
+    border-radius: 5px;
+    padding: 7px;
+    margin-top: 20px;
+    color: #eaeaea;
+    display: inline-block;
+}
+
+nav a {
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333333;
+
+}
+
+
+nav a:hover {
+    color: #FF6E31;
+    padding: 5px;
+}
+
+
+.caption {
+    width: 35%;
+    text-align: justify;
+    display: inline-block;
+    margin: 100px auto;
+    padding: 10px 10px;
+}
+
+h4 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 10px 0px;
+}
+
+
+.satu {
+    padding: 100px auto;
+}
+
+.satu .caption {
+    float: right
+}
+
+.satu img {
+    float: left
+}
+
+.satu h2 {
+    color: #FF6E31;
+}
+
+.satu h4 {
+    color: #243763;
+}
+
+
+.dua {
+    padding: 100px auto;
+}
+
+.dua img {
+    float: right;
+}
+
+.dua h2 {
+    color: #243763;
+}
+
+.dua h4 {
+    color: #FF6E31;
+}
+
+.tiga {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.tiga img {
+    width: 100px;
+    padding: 30px 5px;
+}
+
+.tiga h2 {
+    color: #FF6E31;
+}
+
+.tiga h4 {
+    color: #243763;
+}
+
+/* form */
+.login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #000000;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.buttoncolor {
+    color: white;
+}
+
+/* form */
+
+
+/* footer */
+.footer-main {
+    display: flex;
+    background-color: #243763;
+    color: #fff;
+    padding: 50px 0 0 0;
+    width: 100%;
+}
+
+.footer-1 {
+    margin: 0px;
+    padding: 0 100px;
+    width: 50%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer-fs {
+    font-size: 14px;
+    margin: 10px 0 0 0;
+}
+
+.footer-button {
+    background-color: #ff6e31;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 30px 0 50px;
+    width: 75%;
+    color: #eaeaea;
+    display: flex;
+    text-decoration: none;
+    transition: 0.2s;
+    display: inline-block;
+
+}
+
+.about {
+    display: flex;
+    width: 50%;
+}
+
+.footer-button:hover {
+    background-color: #243763;
+    color: #ff6e31;
+    border-radius: 5px;
+    border: 1px solid #ff6e31;
+    padding: 10px;
+    margin: 30px 0 50px;
+    display: flex;
+    text-decoration: none;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.footer-main h1 {
+    font-size: 18px;
+    color: #ff6e31;
+    margin-bottom: 10px;
+}
+
+.footer-main li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-main li a:hover {
+    color: #ff6e31;
+}
+
+.footer-main a {
+    text-decoration: none;
+}
+
+.footer-2 {
+    margin: 0px;
+    padding: 0 10px;
+    width: 25%;
+}
+
+.footer-3 {
+    margin: 0px;
+    padding: 0 10px;
+    width: 25%;
+}
+
+.footer-4 {
+    margin: 0px;
+    padding: 0 10px;
+    width: 25%;
+}
+
+.footer-final {
+    text-align: center;
+    font-size: 10px;
+    margin: auto;
+    padding: 20px 20px;
+    color: #aeaeae;
+    background-color: #000;
+}
+
+/* footer */

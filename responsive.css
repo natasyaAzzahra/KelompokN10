@@ -1,0 +1,97 @@
+/* untuk tablet */
+@media(max-width: 1000px) {
+    .caption {
+        width: 40%;
+        margin: 50px 10px;
+    }
+
+    .tumbnail {
+        width: 50%;
+    }
+}
+
+
+/* untuk smartphone */
+@media(max-width: 670px) {
+
+    .caption {
+        width: 90%;
+        text-align: center;
+        padding: 10px 0;
+        margin: 10px 10px;
+    }
+
+
+    .footer-main {
+        display: block;
+    }
+
+    .footer-1 {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer-button {
+        margin-bottom: 20px;
+    }
+
+    .about {
+        display: flex;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .footer-2,
+    .footer-3,
+    .footer-4 {
+        width: 30%;
+        padding: 0;
+    }
+
+
+    .button-orange,
+    .button-navy {
+        width: 100%;
+    }
+
+    .tumbnail {
+        width: 100%;
+    }
+
+    .tiga img {
+        width: 25%;
+    }
+
+    .footer-main {
+        display: block;
+        width: 100%;
+    }
+
+
+    nav .menu-icon {
+        display: inline;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    .satu img {
+        float: none;
+    }
+
+    .satu .caption {
+        float: none;
+
+    }
+
+    .dua img {
+        float: none;
+    }
+
+    .dua .caption {
+        float: none;
+    }
+}
